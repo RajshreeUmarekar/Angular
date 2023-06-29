@@ -3,15 +3,15 @@
         <mat-tab-group [backgroundColor]="'primary'" fxFill>
             <mat-tab> 
                 <ng-template mat-tab-label>
-                    <img src="../../assets/logo.png" style="width: '4vw'">
+                    <img src="../../assets/logo.png" style="width: 55px; height: 75px;">
                     <button mat-button>
                         Home
                     </button>
                 </ng-template> 
-                    <div fxLayout="row"  fxFlex="50" style="color: black; text-align: center;" fxLayoutAlign="center center">
+                    <div fxLayout="row"  style="color: black; text-align: center;" fxLayoutAlign="center center">
                         <div fxLayout="column" fxLayoutAlign=" center">
                             <div fxLayout="row" >
-                                <mat-card     style="background-color: lightyellow; color: darkgoldenrod;" >
+                                <mat-card     style="background-color: lightyellow; color: darkgoldenrod;padding: 10px; margin:10px;" >
                                     <h1>Welcome to hire house help!!!!!</h1>
                                     <h5>
                                         We helps you hire domestic helpers quickly at best price.
@@ -21,41 +21,41 @@
                             </div>
                         </div>
                     </div>
-                    <div fxLayout="row"  fxFlex="50"  fxLayoutAlign="center center">
+                    <div fxLayout="row"  fxLayoutAlign="space-evenly center">
                         <div fxLayout="column">
-                            <mat-card  style="min-width: 25vw; min-height: 25vh;">
+                            <mat-card  style="min-width: 25vw; min-height: 25vh; padding-left: 8vw;margin:10px;">
                                 <mat-card-title>Maid</mat-card-title>
                                 <img mat-card-image style="width: 60%; max-height: 35vh; height: 35vh;"  src="../../assets/maid.jpg">
                             </mat-card>
                         </div>
                         <div fxLayout="column" >
-                            <mat-card style="min-width: 25vw; min-height: 25vh;">
+                            <mat-card style="min-width: 25vw; min-height: 25vh; padding-left: 8vw;margin:10px;">
                                 <mat-card-title>Cook</mat-card-title>
                                 <img mat-card-image style="width: 60%; max-height: 35vh; height: 35vh;" src="../../assets/cook.jpg">
                             </mat-card>
                         </div>
                         <div fxLayout="column" >
-                            <mat-card style="min-width: 25vw; min-height: 25vh;">
+                            <mat-card style="min-width: 25vw; min-height: 25vh; padding-left: 8vw;margin:10px;">
                                 <mat-card-title>Nanny</mat-card-title>
                                 <img mat-card-image style="width: 60%; max-height: 35vh; height: 35vh;" src="../../assets/nanny.jpg">
                             </mat-card>
                         </div>
                     </div>
-                    <div fxLayout="row"  fxFlex="50"  fxLayoutAlign="center center">
+                    <div fxLayout="row"  fxLayoutAlign="space-evenly center">
                         <div fxLayout="column">
-                            <mat-card  style="min-width: 25vw; min-height: 25vh;">
+                            <mat-card  style="min-width: 25vw; min-height: 25vh; padding-left: 8vw;margin:10px;">
                                 <mat-card-title>Driver</mat-card-title>
                                 <img mat-card-image style="width: 60%; max-height: 35vh; height: 35vh;" src="../../assets/driver.jpg">
                             </mat-card>
                         </div>
                         <div fxLayout="column" >
-                            <mat-card style="min-width: 25vw; min-height: 25vh;">
+                            <mat-card style="min-width: 25vw; min-height: 25vh; padding-left: 8vw;margin:10px;">
                                 <mat-card-title>Caretaker</mat-card-title>
                                 <img mat-card-image style="width: 60%; max-height: 35vh; height: 35vh;" src="../../assets/caretaker.jpg">
                             </mat-card>
                         </div>
                         <div fxLayout="column" >
-                            <mat-card style="min-width: 25vw; min-height: 25vh;">
+                            <mat-card style="min-width: 25vw; min-height: 25vh; padding-left: 8vw;margin:10px;">
                                 <mat-card-title>Nurse</mat-card-title>
                                 <img mat-card-image style="width: 60%; max-height: 35vh; height: 35vh;" src="../../assets/nurse.jpg">
                             </mat-card>
@@ -66,6 +66,7 @@
             <mat-tab>
                 <ng-template mat-tab-label>
                     <button mat-button>
+                        <mat-icon >cleaning_services</mat-icon>
                         Maid
                     </button>
                 </ng-template> 
@@ -80,6 +81,7 @@
             <mat-tab>
                 <ng-template mat-tab-label>
                     <button mat-button>
+                        <mat-icon >soup_kitchen</mat-icon>
                         Cook
                     </button>
                 </ng-template> 
@@ -94,6 +96,7 @@
             <mat-tab>
                 <ng-template mat-tab-label>
                     <button mat-button>
+                        <mat-icon >baby_changing_station</mat-icon>
                         Nanny
                     </button>
                 </ng-template> 
@@ -108,6 +111,7 @@
             <mat-tab>
                 <ng-template mat-tab-label>
                     <button mat-button>
+                        <mat-icon >drive_eta</mat-icon>
                         Driver
                     </button>
                 </ng-template> 
@@ -122,6 +126,7 @@
             <mat-tab>
                 <ng-template mat-tab-label>
                     <button mat-button>
+                        <mat-icon >home_work</mat-icon>
                         Caretaker
                     </button>
                 </ng-template> 
@@ -136,6 +141,7 @@
             <mat-tab>
                 <ng-template mat-tab-label>
                     <button mat-button>
+                        <mat-icon >local_hospital</mat-icon>
                         Nurse
                     </button>
                 </ng-template> 
