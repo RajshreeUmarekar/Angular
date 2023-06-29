@@ -8,6 +8,7 @@ import { MaidComponent } from './maid/maid.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 
+import {RouterModule} from '@angular/router';
 import {MatTabsModule} from '@angular/material/tabs';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
@@ -60,7 +61,8 @@ import { NurseComponent } from './nurse/nurse.component';
     MatDatepickerModule,
     MatNativeDateModule,
     MatCheckboxModule,
-    MatDialogModule
+    MatDialogModule,
+    RouterModule
   ],
   providers: [ MatDatepickerModule ],
   bootstrap: [AppComponent]

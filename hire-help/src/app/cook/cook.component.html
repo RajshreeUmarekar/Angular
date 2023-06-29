@@ -1,1 +1,56 @@
-<p>cook works!</p>
+<div fxLayout="column" fxLayoutAlign="start center">
+    <mat-card style="margin: 20px;padding: 10px;">
+        <form [formGroup]="hireCookForm">
+            <mat-form-field fxFill>
+                <input matInput placeholder="Full Name" [formControl]="fullName" required>
+             </mat-form-field>
+             <mat-form-field fxFill>
+                <mat-label>Select Duration</mat-label>
+                <mat-select>
+                    <mat-option *ngFor="let duration of durations" [value]="duration.value">
+                        {{duration.viewValue}}
+                      </mat-option>
+                </mat-select>
+              </mat-form-field>
+              <mat-form-field fxFill>
+                <mat-label>Select No. of persons</mat-label>
+                <mat-select>
+                    <mat-option *ngFor="let person of persons" [value]="person.value">
+                        {{person.viewValue}}
+                      </mat-option>
+                </mat-select>
+              </mat-form-field>
+              <mat-form-field fxFill>
+                <mat-label>Select No. of dishes</mat-label>
+                <mat-select>
+                    <mat-option *ngFor="let dish of dishes" [value]="dish.value">
+                        {{dish.viewValue}}
+                      </mat-option>
+                </mat-select>
+              </mat-form-field>
+              <mat-form-field fxFill>
+                <mat-label>Select No. of times per day</mat-label>
+                <mat-select>
+                    <mat-option *ngFor="let time of times" [value]="time.value">
+                        {{time.viewValue}}
+                      </mat-option>
+                </mat-select>
+              </mat-form-field>
+              <mat-form-field fxFill> 
+                <mat-label>Choose start date</mat-label>
+                <input matInput [matDatepicker]="picker">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+              </mat-form-field>
+              <section fxFill>
+                <mat-checkbox [formControl]="italian">Italian</mat-checkbox>
+                <mat-checkbox [formControl]="indian">Indian</mat-checkbox>
+                <mat-checkbox [formControl]="mexican">Mexican</mat-checkbox>
+                <mat-checkbox [formControl]="chinese">Chinese</mat-checkbox>
+              </section>
+              <div fxLayout="row" fxLayoutAlign="center" style="margin-top:1%">
+                <button  mat-raised-button>Submit</button>
+              </div>
+        </form>
+    </mat-card>
+</div>

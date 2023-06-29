@@ -1,195 +1,86 @@
-<div fxLayout="column" fxFlex>
-    <div fxLayout="row" style="background-color: black" >
-        <mat-tab-group [backgroundColor]="'primary'" fxFill>
-            <mat-tab> 
-                <ng-template mat-tab-label>
-                    <img src="../../assets/logo.png" style="width: 55px; height: 75px;">
-                    <button mat-button>
-                        Home
-                    </button>
-                </ng-template> 
-                    <div fxLayout="row"  style="color: black; text-align: center;" fxLayoutAlign="center center">
-                        <div fxLayout="column" fxLayoutAlign=" center">
-                            <div fxLayout="row" >
-                                <mat-card     style="background-color: lightyellow; color: darkgoldenrod;padding: 10px; margin:10px;" >
-                                    <h1>Welcome to hire house help!!!!!</h1>
-                                    <h5>
-                                        We helps you hire domestic helpers quickly at best price.
-                                        We provide reliable well trained workers for house cleaning services and maid services. 
-                                    </h5>
-                                </mat-card>
-                            </div>
-                        </div>
-                    </div>
-                    <div fxLayout="row"  fxLayoutAlign="space-evenly center">
-                        <div fxLayout="column">
-                            <mat-card  style="min-width: 25vw; min-height: 25vh; padding-left: 8vw;margin:10px;">
-                                <mat-card-title>Maid</mat-card-title>
-                                <img mat-card-image style="width: 60%; max-height: 35vh; height: 35vh;"  src="../../assets/maid.jpg">
-                            </mat-card>
-                        </div>
-                        <div fxLayout="column" >
-                            <mat-card style="min-width: 25vw; min-height: 25vh; padding-left: 8vw;margin:10px;">
-                                <mat-card-title>Cook</mat-card-title>
-                                <img mat-card-image style="width: 60%; max-height: 35vh; height: 35vh;" src="../../assets/cook.jpg">
-                            </mat-card>
-                        </div>
-                        <div fxLayout="column" >
-                            <mat-card style="min-width: 25vw; min-height: 25vh; padding-left: 8vw;margin:10px;">
-                                <mat-card-title>Nanny</mat-card-title>
-                                <img mat-card-image style="width: 60%; max-height: 35vh; height: 35vh;" src="../../assets/nanny.jpg">
-                            </mat-card>
-                        </div>
-                    </div>
-                    <div fxLayout="row"  fxLayoutAlign="space-evenly center">
-                        <div fxLayout="column">
-                            <mat-card  style="min-width: 25vw; min-height: 25vh; padding-left: 8vw;margin:10px;">
-                                <mat-card-title>Driver</mat-card-title>
-                                <img mat-card-image style="width: 60%; max-height: 35vh; height: 35vh;" src="../../assets/driver.jpg">
-                            </mat-card>
-                        </div>
-                        <div fxLayout="column" >
-                            <mat-card style="min-width: 25vw; min-height: 25vh; padding-left: 8vw;margin:10px;">
-                                <mat-card-title>Caretaker</mat-card-title>
-                                <img mat-card-image style="width: 60%; max-height: 35vh; height: 35vh;" src="../../assets/caretaker.jpg">
-                            </mat-card>
-                        </div>
-                        <div fxLayout="column" >
-                            <mat-card style="min-width: 25vw; min-height: 25vh; padding-left: 8vw;margin:10px;">
-                                <mat-card-title>Nurse</mat-card-title>
-                                <img mat-card-image style="width: 60%; max-height: 35vh; height: 35vh;" src="../../assets/nurse.jpg">
-                            </mat-card>
-                        </div>
-                    </div>
-                
-            </mat-tab>
-            <mat-tab>
-                <ng-template mat-tab-label>
-                    <button mat-button>
-                        <mat-icon >cleaning_services</mat-icon>
-                        Maid
-                    </button>
-                </ng-template> 
-                <div fxLayout="row"  style="color: black; text-align: center;">
-                    <div fxLayout="column" fxFlex="100" fxLayoutAlign=" center">
-                        <div fxLayout="row" >
-                            <app-maid></app-maid>
-                        </div>
-                    </div>
-                </div>
-            </mat-tab>
-            <mat-tab>
-                <ng-template mat-tab-label>
-                    <button mat-button>
-                        <mat-icon >soup_kitchen</mat-icon>
-                        Cook
-                    </button>
-                </ng-template> 
-                <div fxLayout="row"  style="color: black; text-align: center;">
-                    <div fxLayout="column" fxFlex="100" fxLayoutAlign=" center">
-                        <div fxLayout="row" >
-                            <app-cook></app-cook>
-                        </div>
-                    </div>
-                </div>
-            </mat-tab>
-            <mat-tab>
-                <ng-template mat-tab-label>
-                    <button mat-button>
-                        <mat-icon >baby_changing_station</mat-icon>
-                        Nanny
-                    </button>
-                </ng-template> 
-                <div fxLayout="row"  style="color: black; text-align: center;">
-                    <div fxLayout="column" fxFlex="100" fxLayoutAlign=" center">
-                        <div fxLayout="row" >
-                            <app-nanny></app-nanny>
-                        </div>
-                    </div>
-                </div>
-            </mat-tab>
-            <mat-tab>
-                <ng-template mat-tab-label>
-                    <button mat-button>
-                        <mat-icon >drive_eta</mat-icon>
-                        Driver
-                    </button>
-                </ng-template> 
-                <div fxLayout="row"  style="color: black; text-align: center;">
-                    <div fxLayout="column" fxFlex="100" fxLayoutAlign=" center">
-                        <div fxLayout="row" >
-                            <app-driver></app-driver>
-                        </div>
-                    </div>
-                </div>
-            </mat-tab>
-            <mat-tab>
-                <ng-template mat-tab-label>
-                    <button mat-button>
-                        <mat-icon >home_work</mat-icon>
-                        Caretaker
-                    </button>
-                </ng-template> 
-                <div fxLayout="row"  style="color: black; text-align: center;">
-                    <div fxLayout="column" fxFlex="100" fxLayoutAlign=" center">
-                        <div fxLayout="row" >
-                            <app-caretaker></app-caretaker>
-                        </div>
-                    </div>
-                </div>
-            </mat-tab>
-            <mat-tab>
-                <ng-template mat-tab-label>
-                    <button mat-button>
-                        <mat-icon >local_hospital</mat-icon>
-                        Nurse
-                    </button>
-                </ng-template> 
-                <div fxLayout="row"  style="color: black; text-align: center;">
-                    <div fxLayout="column" fxFlex="100" fxLayoutAlign=" center">
-                        <div fxLayout="row" >
-                            <app-nurse></app-nurse>
-                        </div>
-                    </div>
-                </div>
-            </mat-tab>
-            <mat-tab>
-                <ng-template mat-tab-label>
-                    <button mat-button>
-                        <mat-icon >account_circle</mat-icon>
-                        Login
-                    </button>
-                </ng-template>
-                <div fxLayout="row"  style="color: black;height: calc(100vh - 108px); text-align: center;">
-                    <div fxLayout="column" fxFlex="100" fxLayoutAlign="center center">
-                        <div fxLayout="row" >
-                            <app-login></app-login>
-                        </div>
-                    </div>
-                </div>
-            </mat-tab>
-          </mat-tab-group>
-          
-    </div>
-    <div fxLayout="row"  style="height: 60px;background-color: #ffc107;padding: 10px;" >
-        <div fxLayout="column" fxFlex="10" >
-            <div fxLayout="row">
-                <b>Contact us at : </b>
+<div fxLayout="column" fxLayoutAlign="start center">
+    <div fxLayout="row"  style="color: black; text-align: center;" fxLayoutAlign="center center">
+        <div fxLayout="column" fxLayoutAlign=" center">
+            <div fxLayout="row" >
+                <mat-card     style="background-color: #6a5202; color: white;padding: 10px; margin:10px;" >
+                    <h1>Welcome to hire house help!!!!!</h1>
+                    <h5>
+                        We helps you hire domestic helpers quickly at best price.
+                        We provide reliable well trained workers for house cleaning services and maid services. 
+                    </h5>
+                </mat-card>
             </div>
         </div>
-        <div fxLayout="column" fxFlex="30">
-            <div fxLayout="row">
-                <mat-icon>phone</mat-icon>
-                9999999999
-            </div>
-            <div fxLayout="row">
-                <mat-icon>email</mat-icon>
-                hirehelp@gmail.com
-            </div>
+    </div>
+    <div fxLayout="row"  fxLayoutAlign="space-evenly center">
+        <div fxLayout="column">
+            <mat-card  style="min-width: 25vw; min-height: 25vh; padding-left: 8vw;margin:10px;">
+                <img mat-card-image style="width: 60%; max-height: 35vh; height: 35vh;"  src="../../assets/maid.jpg">
+                <mat-card-actions>
+                    <a routerLink="/maid">
+                        <mat-icon >cleaning_services</mat-icon>
+                        Maid
+                    </a> 
+                </mat-card-actions>
+            </mat-card>
+        </div>
+        <div fxLayout="column" >
+            <mat-card style="min-width: 25vw; min-height: 25vh; padding-left: 8vw;margin:10px;">
+                <img mat-card-image style="width: 60%; max-height: 35vh; height: 35vh;" src="../../assets/cook.jpg">
+                <mat-card-actions>
+                    <a routerLink="/cook">
+                        <mat-icon >soup_kitchen</mat-icon>
+                        Cook
+                    </a> 
+                </mat-card-actions>
+            </mat-card>
+        </div>
+        <div fxLayout="column" >
+            <mat-card style="min-width: 25vw; min-height: 25vh; padding-left: 8vw;margin:10px;">
+                <img mat-card-image style="width: 60%; max-height: 35vh; height: 35vh;" src="../../assets/nanny.jpg">
+                <mat-card-actions>
+                    <a routerLink="/nanny">
+                        <mat-icon >baby_changing_station</mat-icon>
+                        Nanny
+                    </a> 
+                </mat-card-actions>
+            </mat-card>
+        </div>
+    </div>
+    <div fxLayout="row"  fxLayoutAlign="space-evenly center">
+        <div fxLayout="column">
+            <mat-card  style="min-width: 25vw; min-height: 25vh; padding-left: 8vw;margin:10px;">
+                <img mat-card-image style="width: 60%; max-height: 35vh; height: 35vh;" src="../../assets/driver.jpg">
+                <mat-card-actions>
+                    <a routerLink="/driver">
+                        <mat-icon >drive_eta</mat-icon>
+                        Driver
+                    </a> 
+                </mat-card-actions>
+            </mat-card>
+        </div>
+        <div fxLayout="column" >
+            <mat-card style="min-width: 25vw; min-height: 25vh; padding-left: 8vw;margin:10px;">
+                <img mat-card-image style="width: 60%; max-height: 35vh; height: 35vh;" src="../../assets/caretaker.jpg">
+                <mat-card-actions>
+                    <a routerLink="/caretaker">
+                        <mat-icon >home_work</mat-icon>
+                        Caretaker
+                    </a> 
+                </mat-card-actions>
+            </mat-card>
+        </div>
+        <div fxLayout="column" >
+            <mat-card style="min-width: 25vw; min-height: 25vh; padding-left: 8vw;margin:10px;">
+                <img mat-card-image style="width: 60%; max-height: 35vh; height: 35vh;" src="../../assets/nurse.jpg">
+                <mat-card-actions>
+                    <a routerLink="/nurse">
+                        <mat-icon >local_hospital</mat-icon>
+                        Nurse
+                    </a> 
+                </mat-card-actions>
+            </mat-card>
         </div>
     </div>
 </div>
-
-
-
-
+            

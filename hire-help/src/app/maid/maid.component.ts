@@ -25,7 +25,7 @@ interface Times {
   styleUrls: ['./maid.component.scss']
 })
 export class MaidComponent implements OnInit {
-  hireForm: FormGroup;
+  hireMaidForm: FormGroup;
   fullName = new FormControl('');
   sweeping = new FormControl('');
   mopping = new FormControl('');
@@ -69,7 +69,7 @@ export class MaidComponent implements OnInit {
   ];
 
   constructor(fb: FormBuilder) {
-    this.hireForm = fb.group({
+    this.hireMaidForm = fb.group({
       fullName: this.fullName,
       sweeping: this.sweeping,
       mopping: this.mopping,
