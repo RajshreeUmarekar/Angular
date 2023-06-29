@@ -20,11 +20,11 @@ interface Times {
 
 
 @Component({
-  selector: 'app-hire',
-  templateUrl: './hire.component.html',
-  styleUrls: ['./hire.component.scss']
+  selector: 'app-maid',
+  templateUrl: './maid.component.html',
+  styleUrls: ['./maid.component.scss']
 })
-export class HireComponent implements OnInit {
+export class MaidComponent implements OnInit {
   hireForm: FormGroup;
   fullName = new FormControl('');
   sweeping = new FormControl('');
