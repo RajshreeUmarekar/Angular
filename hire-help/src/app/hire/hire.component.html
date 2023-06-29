@@ -1,0 +1,58 @@
+    <div fxLayout="column" fxLayoutAlign="start center">
+        <mat-card>
+            <form [formGroup]="hireForm">
+                <mat-form-field fxFill>
+                    <input matInput placeholder="Full Name" [formControl]="fullName" required>
+                 </mat-form-field>
+                 <mat-form-field fxFill>
+                    <mat-label>Select Duration</mat-label>
+                    <mat-select>
+                        <mat-option *ngFor="let duration of durations" [value]="duration.value">
+                            {{duration.viewValue}}
+                          </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                  <mat-form-field fxFill>
+                    <mat-label>Select No. of rooms</mat-label>
+                    <mat-select>
+                        <mat-option *ngFor="let room of rooms" [value]="room.value">
+                            {{room.viewValue}}
+                          </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                  <mat-form-field fxFill>
+                    <mat-label>Select No. of floors</mat-label>
+                    <mat-select>
+                        <mat-option *ngFor="let floor of floors" [value]="floor.value">
+                            {{floor.viewValue}}
+                          </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                  <mat-form-field fxFill>
+                    <mat-label>Select No. of times per day</mat-label>
+                    <mat-select>
+                        <mat-option *ngFor="let time of times" [value]="time.value">
+                            {{time.viewValue}}
+                          </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                  <mat-form-field fxFill> 
+                    <mat-label>Choose start date</mat-label>
+                    <input matInput [matDatepicker]="picker">
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                  </mat-form-field>
+                  <section fxFill>
+                    <mat-checkbox [formControl]="sweeping">Sweeping</mat-checkbox>
+                    <mat-checkbox [formControl]="mopping">Mopping</mat-checkbox>
+                    <mat-checkbox [formControl]="dusting">Dusting</mat-checkbox>
+                    <mat-checkbox [formControl]="dishes">Dishes</mat-checkbox>
+                    <mat-checkbox [formControl]="laundry">Laundry</mat-checkbox>
+                  </section>
+                  <div fxLayout="row" fxLayoutAlign="center" style="margin-top:1%">
+                    <button  mat-raised-button>Submit</button>
+                  </div>
+            </form>
+        </mat-card>
+    </div>
+   

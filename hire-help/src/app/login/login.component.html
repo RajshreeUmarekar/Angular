@@ -1,0 +1,21 @@
+<div fxLayout="column" fxFlex="100" fxLayoutAlign="center center">
+    <mat-card>
+        <form [formGroup]="loginForm" style="padding: 15px;">
+            <mat-form-field fxFill>
+                <input matInput placeholder="Email Address" [formControl]="emailAddress" required>
+             </mat-form-field>
+             <mat-form-field fxFill>
+                <input matInput placeholder="Password" [formControl]="password" required>
+             </mat-form-field>
+              <div fxLayout="row" fxLayoutAlign="center" style="margin-top:5%">
+                <button  mat-raised-button>Login</button>
+              </div>
+              <div fxLayout="row"  fxLayoutAlign="center center">
+                <h4>If not already signed up, click on </h4>
+                <button mat-button (click)="openUserDialog()">
+                    Register
+                </button>
+              </div>
+        </form>
+    </mat-card>
+</div>
