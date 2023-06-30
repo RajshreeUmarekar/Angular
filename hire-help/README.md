@@ -13,44 +13,44 @@ HireHelp is a demo website for practice purpose using Angular. Basic idea is to 
 Home Page:
 ---------
 
-<img width="946" alt="1-Home" src="https://github.com/RajshreeUmarekar/HireHelp/assets/81693210/8b6e1fb2-9f4b-4055-a2e9-3fecd228b419">
+<img width="946" alt="1-Home" src="https://github.com/RajshreeUmarekar/Angular/assets/81693210/c82de037-c9a3-42fa-aa0d-d5c834e2ee26">
 
 Hire Maid Form:
 --------------
 
-<img width="929" alt="2-Maid" src="https://github.com/RajshreeUmarekar/HireHelp/assets/81693210/6ab50083-931a-4594-8adf-4dcb98113ef5">
+<img width="929" alt="2-Maid" src="https://github.com/RajshreeUmarekar/Angular/assets/81693210/90e87656-ca8f-4a15-9ea3-d8572a56ac79">
 
 Hire Cook Form:
 --------------
 
-<img width="935" alt="3-Cook" src="https://github.com/RajshreeUmarekar/HireHelp/assets/81693210/7cd56c50-855e-44f5-a06e-d91d2efcf470">
+<img width="935" alt="3-Cook" src="https://github.com/RajshreeUmarekar/Angular/assets/81693210/f340dc3b-237f-428e-a7a3-d3ca7646e3db">
 
 Hire Nanny Form:
 ---------------
 
-<img width="944" alt="4-Nanny" src="https://github.com/RajshreeUmarekar/HireHelp/assets/81693210/593f53ab-81f5-428b-840a-a4bdd6e22f8c">
+<img width="944" alt="4-Nanny" src="https://github.com/RajshreeUmarekar/Angular/assets/81693210/d22ba6fd-239b-42e3-aba4-2d697a0c4f50">
 
 Hire Driver Form:
 ----------------
 
-<img width="933" alt="5-Driver" src="https://github.com/RajshreeUmarekar/HireHelp/assets/81693210/bafb5e5b-a665-4dd9-8480-ddbd52f93c16">
+<img width="933" alt="5-Driver" src="https://github.com/RajshreeUmarekar/Angular/assets/81693210/58900f35-c9f8-4b25-8b12-eb00cbde326f">
 
 Hire Caretaker Form:
 -------------------
 
-<img width="935" alt="6-Caretaker" src="https://github.com/RajshreeUmarekar/HireHelp/assets/81693210/07ef2a7b-177e-41de-b460-aa0eb3807f32">
+<img width="935" alt="6-Caretaker" src="https://github.com/RajshreeUmarekar/Angular/assets/81693210/3037215c-bd8a-45bd-9d98-cce63f465773">
 
 Hire Nurse Form:
 ---------------
 
-<img width="916" alt="7-Nurse" src="https://github.com/RajshreeUmarekar/HireHelp/assets/81693210/c423d400-2a46-4cb3-94d6-9c675f40f717">
+<img width="916" alt="7-Nurse" src="https://github.com/RajshreeUmarekar/Angular/assets/81693210/261a7e96-6f72-43ce-a5c2-e9912123da47">
 
 Login Form:
 ----------
 
-<img width="951" alt="8-Login" src="https://github.com/RajshreeUmarekar/HireHelp/assets/81693210/04945545-1c62-43b8-93d5-3ff54d8621a9">
+<img width="951" alt="8-Login" src="https://github.com/RajshreeUmarekar/Angular/assets/81693210/9614da0c-2dde-4bb3-9cfa-5a52c750119c">
 
 Register Form:
 -------------
 
-<img width="908" alt="9-Register" src="https://github.com/RajshreeUmarekar/HireHelp/assets/81693210/e43dc804-c2ba-4e18-88c6-c7b23dade08a">
+<img width="908" alt="9-Register" src="https://github.com/RajshreeUmarekar/Angular/assets/81693210/7ac55c2a-ccb9-4c6e-9d77-50f84e0b805a">
