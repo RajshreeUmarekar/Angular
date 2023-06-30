@@ -1,0 +1,64 @@
+<div fxLayout="row"  fxLayoutAlign="space-around center" style="height: 60px;background-color: #ffc107;padding: 10px;" >
+    <img src="../../assets/logo.png" style="width: 55px; height: 75px;">
+
+    <nav>
+        <div class="container"> 
+            <div style="display: flex;">
+                <a mat-flat-button routerLink="/home" style=" margin-right: 2vw;">
+                    <mat-icon >home</mat-icon>
+                    Home
+                </a>
+                <a mat-flat-button routerLink="/maid"  style=" margin-right: 2vw;">
+                    <mat-icon >cleaning_services</mat-icon>
+                    Maid
+                </a>
+                <a mat-flat-button routerLink="/cook"  style=" margin-right: 2vw;">
+                    <mat-icon >soup_kitchen</mat-icon>
+                    Cook
+                </a>
+                <a mat-flat-button routerLink="/nanny"  style=" margin-right: 2vw;">
+                    <mat-icon >baby_changing_station</mat-icon>
+                    Nanny
+                </a>
+                <a mat-flat-button routerLink="/driver"  style=" margin-right: 2vw;">
+                    <mat-icon >drive_eta</mat-icon>
+                    Driver
+                </a>
+                <a mat-flat-button routerLink="/caretaker"  style=" margin-right: 2vw;">
+                    <mat-icon >home_work</mat-icon>
+                    Caretaker
+                </a>
+                <a mat-flat-button routerLink="/nurse"  style=" margin-right: 2vw;">
+                    <mat-icon >local_hospital</mat-icon>
+                    Nurse
+                </a>
+                <a mat-flat-button routerLink="/login"  style=" margin-right: 2vw;">
+                    <mat-icon >account_circle</mat-icon>
+                    Login
+                </a>
+            </div>
+        </div>
+    </nav>
+</div>    
+    
+<div style="background-color: black;">
+    <router-outlet></router-outlet>
+</div>
+
+<div fxLayout="row"  style="height: 60px;background-color: #ffc107;padding: 10px;" >
+    <div fxLayout="column" fxFlex="10" >
+        <div fxLayout="row">
+            <b>Contact us at : </b>
+        </div>
+    </div>
+    <div fxLayout="column" fxFlex="30">
+        <div fxLayout="row">
+            <mat-icon>phone</mat-icon>
+            9999999999
+        </div>
+        <div fxLayout="row">
+            <mat-icon>email</mat-icon>
+            hirehelp@gmail.com
+        </div>
+    </div>
+</div>
