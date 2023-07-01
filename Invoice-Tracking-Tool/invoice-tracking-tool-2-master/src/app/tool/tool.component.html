@@ -1,0 +1,218 @@
+<!-- Toolbar -->
+<div class="toolbar" role="banner">
+  <div class="toolHeader" fxLayout="row" fxLayoutAlign="center center" >
+    <mat-icon id="appIcon" aria-hidden="false">receipt</mat-icon> 
+    <span id="title">Invoice Tracking Tool</span>
+  </div>  
+  <div class="buttons" fxLayout="row" fxLayoutAlign="end center" >
+    <button mat-raised-button color="primary" (click)='logout()'>Logout</button>
+  </div>
+
+</div>
+
+<!-- Content -->
+<div class="content" role="main">
+
+  <!-- Header -->
+  <div  class="header" fxLayout="row"  >
+    <img id='ikealogo' src='../../assets/ikea_logo.jpg'/>
+  </div>
+  
+  <!-- Form Title -->
+  <h2 id="FormTitle">Search Invoice Form</h2>
+
+   <!-- Tool -->
+  <div class="tool" fxLayout="row" fxLayoutAlign="center center" >
+
+    <mat-card class="tool-card" class="mat-elevation-z4">
+
+      <div class="toolform">
+
+        <form  [formGroup]="searchForm"  class="container mt-3" (ngSubmit)="search()">
+
+          <!-- Form Send for Processing -->
+          <div *ngIf="isSearching" class="spinner">
+            <mat-spinner [diameter]="100"></mat-spinner>
+          </div>
+
+          <!-- Form not Send for Processing -->
+          <div *ngIf="!isSearching">
+           
+            <div class="expand-collapse-buttons">
+              <button mat-raised-button class="accordionbtn" type="button" (click)="accordion.openAll()">Expand All</button>
+              <button mat-raised-button class="accordionbtn" type="button" (click)="accordion.closeAll()">Collapse All</button>
+            </div>
+
+            <mat-accordion multi>
+              <!-- ICI No. -->
+              <mat-expansion-panel>
+                  
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    ICI No. 
+                  </mat-panel-title>
+                  <mat-panel-description>
+                    Enter ICI No.
+                  </mat-panel-description>
+                </mat-expansion-panel-header>
+              
+                <div  class="addFieldHeader" fxLayout="row"  >
+                  <label>  To add more ICI Numbers, click on + button</label> 
+                  <div class="spacer"></div>
+                  <div class="addbtn">
+                    <button mat-mini-fab class="minibtn" color="primary" type="button" (click)="addICINo()">
+                      <mat-icon>add</mat-icon>
+                    </button>
+                  </div>
+                </div>
+                  
+                <div formArrayName="ICINos">
+                  <section class="ICIsection" *ngFor="let ICINo of ICINos.controls; let i = index;">
+                    <div [formGroupName]="i">
+                      <button mat-mini-fab class="counterbtn" disabled color="primary" type="button">
+                        <span id="counter">{{i + 1}}</span> 
+                      </button>
+  
+                      <mat-form-field id="field">
+                        <input matInput type="number" formControlName="FirstSeller" required placeholder="FirstSeller">
+                        <mat-error *ngIf="ICINo.get('FirstSeller').invalid">{{getError('FirstSeller',i)}}</mat-error>
+                      </mat-form-field>
+                        <span>G</span>
+                      
+                      <mat-form-field id="field">
+                        <input matInput formControlName="TransType" required placeholder="TransType">
+                        <mat-error *ngIf="ICINo.get('TransType').invalid">{{getError('TransType',i)}}</mat-error>
+                      </mat-form-field>
+  
+                      <mat-form-field id="field">
+                        <input matInput type="number" formControlName="ICINumber" required placeholder="ICINumber">
+                        <mat-error *ngIf="ICINo.get('ICINumber').invalid">{{getError('ICINumber',i)}}</mat-error>
+                      </mat-form-field>
+                      <div class="removebtn">
+                        <button mat-mini-fab class="minibtn" color="primary" type="button" (click)="removeICINo(i)">
+                          <mat-icon>remove</mat-icon>
+                        </button>
+                      </div>
+                    </div>
+  
+                  </section>
+                </div>
+                
+              </mat-expansion-panel>
+  
+              <!-- CSM Id -->
+              <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    CSM Id
+                  </mat-panel-title>
+                  <mat-panel-description>
+                    Enter your CSM Id
+                  </mat-panel-description>
+                </mat-expansion-panel-header>
+              
+                <div  class="addFieldHeader" fxLayout="row"  >
+                  <label>  To add more CSM Ids, click on + button</label> 
+                  <div class="spacer"></div>
+                  <div class="addbtn">
+                    <button mat-mini-fab class="minibtn" color="primary" type="button" (click)="addCSMId()">
+                      <mat-icon>add</mat-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div formArrayName="CSMIds">
+  
+  
+                  <section class="CSMsection" *ngFor="let CSMId of CSMIds.controls; let i = index;">
+  
+                    <div [formGroupName]="i">
+                        <button mat-mini-fab class="counterbtn" disabled color="primary" type="button">
+                          <span id="counter">{{i + 1}}</span> 
+                        </button>
+                        
+                        <mat-form-field id="field">
+                        <input matInput type="number" formControlName="CnorCode" required placeholder="CnorCode">
+                        <mat-error *ngIf="CSMId.get('CnorCode').invalid">{{getError('CnorCode',i)}}</mat-error>
+                        </mat-form-field>
+                        <mat-form-field id="field">
+                        <input matInput type="text" formControlName="CnorType" required placeholder="CnorType">
+                        <mat-error *ngIf="CSMId.get('CnorType').invalid">{{getError('CnorType',i)}}</mat-error>
+                        </mat-form-field>
+                        <mat-form-field id="field">
+                        <input matInput type="text" formControlName="CSMNumber" required placeholder="CSMNumber">
+                        <mat-error *ngIf="CSMId.get('CSMNumber').invalid">{{getError('CSMNumber',i)}}</mat-error>
+                        </mat-form-field>
+                        <div class="removebtn">
+                        <button mat-mini-fab class="minibtn" color="primary" type="button" (click)="removeCSMId(i)">
+                            <mat-icon>remove</mat-icon>
+                        </button>
+                        </div>
+                    </div>
+                      
+                  </section>
+                </div>
+                
+              </mat-expansion-panel>
+              <!-- Legal BD No -->
+              <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                  Legal BD No.
+                  </mat-panel-title>
+                  <mat-panel-description>
+                    Enter your Legal BD No.
+                  </mat-panel-description>
+                </mat-expansion-panel-header>
+              
+                <div  class="addFieldHeader" fxLayout="row"  >
+                  <label>  To add more Legal BD Numbers, click on + button</label> 
+                  <div class="spacer"></div>
+                  <div class="addbtn">
+                    <button mat-mini-fab class="minibtn" color="primary" type="button" (click)="addLegalBDNo()">
+                      <mat-icon>add</mat-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div formArrayName="LegalBDNos">
+                  <section class="LegalBDsection" *ngFor="let LegalBDNo of LegalBDNos.controls; let i = index;">
+                    <div [formGroupName]="i">
+                      <button mat-mini-fab class="counterbtn" disabled color="primary" type="button">
+                        <span id="counter">{{i + 1}}</span> 
+                      </button>
+                        
+  
+                      <mat-form-field id="field">
+                        <input matInput type="text" formControlName="LegalBDNo" maxlength="30" required placeholder="LegalBDNo">
+                        <mat-error *ngIf="LegalBDNo.invalid">{{getError('LegalBDNo', i)}}</mat-error>
+                      </mat-form-field>
+                      <span></span>
+                      <div class="removebtn">
+                        <button mat-mini-fab class="minibtn" color="primary" type="button" (click)="removeLegalBDNo(i)">
+                          <mat-icon>remove</mat-icon>
+                        </button>
+                      </div>
+                    </div>          
+                  </section>
+                </div>
+              
+              </mat-expansion-panel>
+  
+            </mat-accordion>
+
+          </div>
+          
+          <br>
+
+          <div class="searchbtn" >
+            <button mat-raised-button color="primary" type="submit" [disabled]="isSearching">Search</button>
+          </div>
+
+        </form>
+
+      </div>
+    </mat-card>
+
+  </div>
+</div>

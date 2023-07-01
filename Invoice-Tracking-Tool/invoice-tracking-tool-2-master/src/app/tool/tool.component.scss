@@ -1,0 +1,195 @@
+.spacer {
+    flex: 1;
+  }
+    
+.toolbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #1710a1;
+  color: white;
+  font-weight: 600;
+}
+    
+.content {
+  display: flex;
+  margin: 80px auto 32px;
+  padding: 0 16px;
+  max-width: 960px;
+  flex-direction: column;
+  align-items: center;
+  max-height: 80vh;
+}
+
+.tool {
+  display: flex;
+  margin: 20px auto 10px;
+  padding: 0 16px;
+  max-width: 960px;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.buttons{
+  display: flex;
+  margin-right: 1vw;
+}
+
+.mat-mdc-card{
+  width: 72vw;
+  display: flex;
+}
+
+.header {
+  display: flex;
+  width: 95vw;
+}
+.fieldHeader {
+  text-align: center;
+  display: flex;
+}
+.addFieldHeader {
+  display: flex;
+  background-color: lightgrey;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 2vh;
+}
+.toolHeader {
+  display: flex;
+  margin: auto;
+  padding: 0 16px;
+  flex-direction: row;
+  align-items: center;
+}
+
+.toolform {
+  margin: 15px;
+  padding: 10px; 
+}
+.spinner {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
+.material-icons {
+  line-height: 0.5;
+  align-self: self-end;
+}
+.formfields {
+  display: flex;
+}
+      
+.mat-form-field {
+    padding: 5px;
+}
+.mat-raised-button.mat-primary {
+    background-color: #1710a1;
+}
+.mat-card {
+    margin: 10px;
+    min-width: 65vw;
+}
+.mat-simple-snackbar-action {
+    color: rgb(85, 90, 90) !important;
+}
+.mat-spinner {
+    margin: 20px;
+}
+.minibtn {
+  width: 30px !important;
+  height: 30px !important;
+  background-color: #1710a1 !important;
+}
+
+.counterbtn{
+  width: 28px !important;
+  height: 28px !important;
+}
+
+
+.snackBarErrorMessage {
+  margin: 50px !important;
+  background-color: #f2dede !important;
+  border-color: #ebccd1 !important;
+  color: #a94442 !important;
+  font-weight: bold !important;
+}
+.snackBarSuccessMessage {
+  margin: 50px !important;
+  background-color: #dff0d8 !important;
+  border-color: #d6e9c6 !important;
+  color: #3c763d !important;
+  font-weight: bold !important;
+}
+
+.expand-collapse-buttons {
+  padding-bottom: 20px;
+  direction: rtl;
+}
+.mat-accordion .mat-expansion-panel-header-title,
+.mat-accordion .mat-expansion-panel-header-description {
+  flex-basis: 0;
+}
+.mat-accordion .mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
+}
+.mat-accordion .mat-form-field + .mat-form-field {
+  margin-left: 8px;
+}
+
+.searchbtn {
+    display: grid;
+}
+.logoutbtn, .addbtn {
+  align-self: flex-end;
+}
+.removebtn {
+  align-self: flex-end;
+  display: inline-flex;
+  float: right;
+  margin-top: 10px;
+}
+.accordionbtn {
+  margin-right: 15px;
+  line-height: 25px;
+  padding: 0 5px;
+}
+
+.ICIsection, .CSMsection, .LegalBDsection{
+  margin-right: 5vw;
+  display: flex;
+}
+
+#title {
+  margin : 15px;
+}
+#appIcon {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  margin-left: 125px;
+}
+#FormTitle {
+  margin: 0px;
+}
+#counter {
+  line-height: 0px;
+  color: grey;
+  vertical-align: super;
+  vertical-align: middle;
+}
+#ikealogo {
+  width: 7vw;
+  height: 10vh;
+}
+
+#field {
+  margin-right: 0.5vw;
+  margin-left: 0.5vw;
+}

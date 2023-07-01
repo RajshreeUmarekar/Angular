@@ -1,0 +1,43 @@
+
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v11.0" nonce="mwWZbZbU"></script>
+
+<div class="login" fxLayout="row" fxLayoutAlign="center center" >
+  <mat-card class="login-card">
+    <div class="title" >
+      <mat-icon aria-hidden="false">collections</mat-icon>
+      <label id="loginlbl">Art Gallery</label>
+    </div>
+    <div class="loginform">
+      <div fxLayout="row" fxLayoutAlign="space-around center"  fxFlex="100">
+        <mat-icon aria-hidden="false">email</mat-icon>
+
+        <mat-form-field appearance="fill" id="field">
+          <mat-label>Enter your user id</mat-label>
+          <input matInput [formControl]="userid" required>
+          <mat-error *ngIf="userid.invalid">{{getErrorMessage()}}</mat-error>
+        </mat-form-field>
+      </div>
+      <div fxLayout="row" fxLayoutAlign="space-around center"  fxFlex="100">
+        <mat-icon aria-hidden="false">lock</mat-icon>
+        <mat-form-field appearance="fill" id="field">
+            <mat-label>Enter your password</mat-label>
+            <input matInput type="password" [formControl]="password" required>
+            <mat-error *ngIf="password.invalid">{{getErrorMessage()}}</mat-error>
+        </mat-form-field>
+      </div>
+      <div fxLayout="row" fxLayoutAlign="space-around center"  fxFlex="100">
+        <div class="loginbtn" >
+          <button mat-raised-button color="primary" (click)='login()'>Login</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="g-signin2" style="align-self: center;" data-onsuccess="GoogleSignIn" data-width="228" data-theme="dark" data-long-title="true"></div>
+    <p id="spacer"> </p>
+    <div class="fb-login-button"  style="align-self: center;"  data-onsuccess="FacebookSignIn" data-size="large" data-button-type="login_with" data-layout="default" data-auto-logout-link="true" data-use-continue-as="true"></div>
+    <p id="spacer"> </p>
+  </mat-card>
+</div>
+
+

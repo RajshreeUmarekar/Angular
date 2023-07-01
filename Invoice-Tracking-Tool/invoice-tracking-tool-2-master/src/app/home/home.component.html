@@ -1,0 +1,26 @@
+
+
+<div class="home">
+    <mat-card class="home-card">
+        <p id="welcomeMessage"><b>Invoice tracking tool</b></p>
+        <mat-divider></mat-divider>
+        <p id="infoMessage"><b>To proceed login or register!</b></p>
+        <mat-button-toggle-group value="primary" #actionToggle="matButtonToggleGroup">
+            <mat-button-toggle value="login" id="login">
+                <button mat-button color="green" (click)="login()">
+                    Login
+                </button>
+            </mat-button-toggle>
+            <mat-button-toggle value="register" id="register">
+                <button mat-button color="darkred"  (click)="register()">
+                    Register
+                </button>
+            </mat-button-toggle>
+          </mat-button-toggle-group>
+    </mat-card>
+   
+</div>
+
+
+
+  

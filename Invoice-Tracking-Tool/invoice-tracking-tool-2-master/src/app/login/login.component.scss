@@ -1,0 +1,53 @@
+.login {
+  display: flex;
+  margin: 82px auto 32px;
+  padding: 0 16px;
+  max-width: 960px;
+  flex-direction: column;
+  align-items: center;
+}
+.title {
+  display: flex;
+  margin: 15px;
+  padding: 10px; 
+  align-self: center;
+}
+.loginform {
+  margin: 15px;
+  padding: 10px; 
+}
+.mat-icon {
+  padding-right: 10px;
+}
+.loginbtn {
+  display: grid;
+}
+.mat-card {
+  min-width: 25vw;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+#loginlbl {
+    align-self: center;
+    font-weight: bold
+}
+.mat-raised-button.mat-primary {
+    background-color: #1710a1;
+}
+.snackBarErrorMessage {
+  margin: 50px !important;
+  background-color: #f2dede !important;
+  border-color: #ebccd1 !important;
+  color: #a94442 !important;
+  font-weight: bold !important;
+}
+
+#spacer {
+  margin: px;
+  line-break: anywhere;
+}
+
+#field {
+  width: 42vw;
+}

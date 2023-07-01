@@ -1,0 +1,85 @@
+
+<div class="register" fxLayout="row" fxLayoutAlign="center center" >
+  <mat-card class="register-card">
+    <div class="title" >
+      <mat-icon aria-hidden="false">collections</mat-icon>
+      <label id="registerlbl">Art Gallery</label>
+    </div>
+    <div class="registerform">
+
+      <form [formGroup]="form" (ngSubmit)="register()">
+           
+        <div class="form-group">
+
+          <div fxLayout="row" fxLayoutAlign="space-around center"  fxFlex="100">
+              <mat-icon aria-hidden="false">person</mat-icon>
+              <!-- FirstName -->
+              <mat-form-field appearance="fill" id="firstNameField">
+                  <mat-label>Enter your firstname</mat-label>
+                  <input matInput type="text" formControlName="firstName" required>
+                  <mat-error *ngIf="this.form.controls.firstName.invalid">{{getErrorMessage('firstName')}}</mat-error>
+              </mat-form-field>
+
+              <!-- LastName -->
+              <mat-form-field appearance="fill" id="lastNameField">
+                  <mat-label>Enter your lastname</mat-label>
+                  <input matInput type="text" formControlName="lastName" required>
+                  <mat-error *ngIf="this.form.controls.lastName.invalid">{{getErrorMessage('lastName')}}</mat-error>
+              </mat-form-field>
+          </div>
+
+          <div fxLayout="row" fxLayoutAlign="space-around center"  fxFlex="100">
+              <mat-icon aria-hidden="false">email</mat-icon>
+
+              <!-- Email Id -->
+              <mat-form-field appearance="fill" id="field">
+                <mat-label>Enter your email id</mat-label>
+                <input matInput type="email" formControlName="emailid" required>
+                <mat-error *ngIf="this.form.controls.emailid.invalid">{{getErrorMessage('emailid')}}</mat-error>
+              </mat-form-field>
+          </div>
+
+          <div fxLayout="row" fxLayoutAlign="space-around center"  fxFlex="100">
+            <!-- Mobile Number -->
+            <mat-icon aria-hidden="false">phone</mat-icon>
+
+            <mat-form-field appearance="fill" id="field">
+              <mat-label>Enter your mobile number</mat-label>
+              <input matInput type="text" formControlName="mobileNumber" required pattern="[1-9]{1}[0-9]{9}">
+              <mat-error *ngIf="this.form.controls.mobileNumber.invalid">{{getErrorMessage('mobileNumber')}}</mat-error>
+            </mat-form-field>
+          </div>
+
+          <div fxLayout="row" fxLayoutAlign="space-around center"  fxFlex="100">
+            <!-- Password -->
+            <mat-icon aria-hidden="false">lock</mat-icon>
+            <mat-form-field appearance="fill" id="field">
+                <mat-label>Enter your password</mat-label>
+                <input matInput type="password" formControlName="password" required>
+                <mat-error *ngIf="this.form.controls.password.invalid">{{getErrorMessage('password')}}</mat-error>
+            </mat-form-field>
+          </div>
+
+          <div fxLayout="row" fxLayoutAlign="space-around center"  fxFlex="100">
+            <!-- Re-Password -->
+            <mat-icon aria-hidden="false">lock</mat-icon>
+            <mat-form-field appearance="fill" id="field">
+                <mat-label>Re-enter your password</mat-label>
+                <input matInput type="password" formControlName="confirm_password" required>
+                <mat-error *ngIf="this.form.controls.confirm_password.invalid">{{getErrorMessage('confirm_password')}}</mat-error>
+            </mat-form-field>
+          </div>
+            
+          <div fxLayout="row" fxLayoutAlign="space-around center"  fxFlex="100">
+            <div class="registerbtn" >
+              <button mat-raised-button color="primary" type="submit" [disabled]="!form.valid">Register</button>
+            </div>
+          </div>  
+        </div>
+      </form>
+    </div>
+  </mat-card>
+</div>
+  
+  
+  
