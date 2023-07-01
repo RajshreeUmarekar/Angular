@@ -1,56 +1,44 @@
-# HireHelp
+# Invoice Tracking Tool
 
-HireHelp is a demo website for practice purpose using Angular. Basic idea is to find helpers from home with ease. It serves the following purpose :
+Invoice Tracking Tool is a demo website for practice purpose using Angular.  It serves the following purpose :
 
-<li>Allows anyone to create an account and register.</li>
-<li>Anyone can hire a maid online based on  their requirements with just a click.</li>
-<li>Anyone can hire a cook online based on  their requirements with just a click.</li>
-<li>Anyone can hire a nanny online based on  their requirements with just a click.</li>
-<li>Anyone can hire a driver online based on  their requirements with just a click.</li>
-<li>Anyone can hire a caretaker online based on  their requirements with just a click.</li>
-<li>Anyone can hire a nurse online based on  their requirements with just a click.</li>
+<li>Allows user to register and login.</li>
+<li>User can login using username, password or google or facebook.</li>
+<li>User can enter details and search for an invoice.</li>
+<li>User can add or remove fields based on choice.</li>
+<li>User can see a list of invoices.</li>
+<li>User can also filter or navigate to another page under table</li>
+<li>User can navigate to Home Page or Logout</li>
 
 Home Page:
 ---------
 
-<img width="946" alt="1-Home" src="https://github.com/RajshreeUmarekar/Angular/assets/81693210/c82de037-c9a3-42fa-aa0d-d5c834e2ee26">
-
-Hire Maid Form:
---------------
-
-<img width="929" alt="2-Maid" src="https://github.com/RajshreeUmarekar/Angular/assets/81693210/90e87656-ca8f-4a15-9ea3-d8572a56ac79">
-
-Hire Cook Form:
---------------
-
-<img width="935" alt="3-Cook" src="https://github.com/RajshreeUmarekar/Angular/assets/81693210/f340dc3b-237f-428e-a7a3-d3ca7646e3db">
-
-Hire Nanny Form:
----------------
-
-<img width="944" alt="4-Nanny" src="https://github.com/RajshreeUmarekar/Angular/assets/81693210/d22ba6fd-239b-42e3-aba4-2d697a0c4f50">
-
-Hire Driver Form:
-----------------
-
-<img width="933" alt="5-Driver" src="https://github.com/RajshreeUmarekar/Angular/assets/81693210/58900f35-c9f8-4b25-8b12-eb00cbde326f">
-
-Hire Caretaker Form:
--------------------
-
-<img width="935" alt="6-Caretaker" src="https://github.com/RajshreeUmarekar/Angular/assets/81693210/3037215c-bd8a-45bd-9d98-cce63f465773">
-
-Hire Nurse Form:
----------------
-
-<img width="916" alt="7-Nurse" src="https://github.com/RajshreeUmarekar/Angular/assets/81693210/261a7e96-6f72-43ce-a5c2-e9912123da47">
-
-Login Form:
-----------
-
-<img width="951" alt="8-Login" src="https://github.com/RajshreeUmarekar/Angular/assets/81693210/9614da0c-2dde-4bb3-9cfa-5a52c750119c">
+<img width="543" alt="Home" src="https://github.com/RajshreeUmarekar/Angular/assets/81693210/0394cfc3-82d9-4781-943e-6c35aad5cac4">
 
 Register Form:
--------------
+--------------
 
-<img width="908" alt="9-Register" src="https://github.com/RajshreeUmarekar/Angular/assets/81693210/7ac55c2a-ccb9-4c6e-9d77-50f84e0b805a">
+<img width="797" alt="Register Form" src="https://github.com/RajshreeUmarekar/Angular/assets/81693210/4c78eb07-e070-4108-854c-6d917d3508c5">
+
+Login Form:
+--------------
+
+<img width="716" alt="Login Form" src="https://github.com/RajshreeUmarekar/Angular/assets/81693210/3b607234-1ce7-4480-93f0-324c3939efd7">
+
+Tool:
+---------------
+
+<img width="953" alt="Tool" src="https://github.com/RajshreeUmarekar/Angular/assets/81693210/faed01ae-aad6-4bcb-a038-5ff74a1b2de0">
+
+<img width="953" alt="Tool-2" src="https://github.com/RajshreeUmarekar/Angular/assets/81693210/baa5d064-7cdb-4caf-b1a6-5483155535e0">
+
+<img width="956" alt="Tool-3" src="https://github.com/RajshreeUmarekar/Angular/assets/81693210/95a85b52-9fab-4ce0-8146-2dca9773ea68">
+
+List:
+----------------
+
+<img width="955" alt="List" src="https://github.com/RajshreeUmarekar/Angular/assets/81693210/2ef9e629-1b41-4885-8b5c-1d5ea2d21c85">
+
+<img width="953" alt="List-Filtered" src="https://github.com/RajshreeUmarekar/Angular/assets/81693210/25a10a48-055f-43b2-8eae-5649ab00f8f6">
+
+
