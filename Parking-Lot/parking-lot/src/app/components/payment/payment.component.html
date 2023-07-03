@@ -1,0 +1,46 @@
+<div id="form">
+    <div>
+        <div id="header">
+            <h4>Payment Form</h4>
+            <hr/>
+        </div>
+    </div>
+    <form id="paymentForm" [formGroup]="paymentForm" (ngSubmit)="onSubmit()" >
+        <p>
+            <mat-form-field appearance="fill">
+                <mat-label>Entry Time</mat-label>
+                <input matInput type="datetime-local" placeholder="entryTime" formControlName="entryTime">
+            </mat-form-field>
+        </p>
+        <p>
+            <mat-form-field appearance="fill">
+                <mat-label>Exit Time</mat-label>
+                <input matInput type="datetime-local" placeholder="exitTime" formControlName="exitTime">
+            </mat-form-field>
+        </p>
+        <p>
+            <mat-form-field appearance="fill">
+                <mat-label>Amount</mat-label>
+                <input matInput placeholder="amount" formControlName="amount">
+            </mat-form-field>
+        </p>
+        <p>
+            <mat-form-field appearance="fill">
+                <mat-label>Payment Mode</mat-label>
+                <mat-select placeholder="paymentMode" formControlName="paymentMode" required>
+                    <mat-option *ngFor="let mode of PaymentModes" [value]="mode.value">
+                        {{mode.name}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </p>
+
+        <div *ngIf="amountDetails == 0; then goBackBlock else paymentBlock"></div>
+        <ng-template #goBackBlock>
+            <button mat-raised-button color="primary" type="submit">Go back</button>
+        </ng-template>
+        <ng-template #paymentBlock>
+            <button mat-raised-button color="primary" type="submit">Pay</button>
+        </ng-template>
+    </form>
+</div>

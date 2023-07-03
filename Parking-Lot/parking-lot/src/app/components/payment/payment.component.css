@@ -1,0 +1,24 @@
+#form {
+    padding: 15px;
+    background-color: white;
+    width: 50%;
+    margin-left: 25%;
+}
+#header, #paymentForm {
+    text-align: center;
+}
+.mat-form-field {
+    width: 40vw;
+}
+#formRow {
+    margin-bottom: 10px;
+}
+.mat-mdc-form-field {
+    width: 40vw;
+}
+.mat-mdc-raised-button:not(:disabled) {
+    background-color: darkblue;
+}
+.mdc-text-field__input::-webkit-calendar-picker-indicator {
+    display: block !important;
+}

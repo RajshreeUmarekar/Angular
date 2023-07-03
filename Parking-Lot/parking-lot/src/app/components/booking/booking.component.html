@@ -1,0 +1,39 @@
+<div id="form">
+    <div id="header">
+        <h4>Booking Form</h4>
+    </div>
+    <hr/>
+    <mat-card class="ticket-card">
+        <mat-card-title>Slot Details</mat-card-title>
+        <hr/>
+        <mat-card-content>
+            <div class="row">
+                <div class="col-md-3" id="labelName">
+                    <li>Available</li>
+                </div>
+                <div class="col-md-3">
+                    <div *ngIf="availabilityDetails.isOccupied; then notAvailableBlock else availableBlock"></div>
+                    <ng-template #availableBlock>Yes</ng-template>
+                    <ng-template #notAvailableBlock>No</ng-template>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3" id="labelName">
+                    <li>Chargable</li>
+                </div>
+                <div class="col-md-3">
+                    <div *ngIf="availabilityDetails.isChargable; then chargableBlock else notChargableBlock"></div>
+                    <ng-template #notChargableBlock>Yes</ng-template>
+                    <ng-template #chargableBlock>No</ng-template>
+                </div>
+            </div>
+        </mat-card-content>
+    </mat-card>
+    <br/>
+    <div id="footer">
+        <form (ngSubmit)="onSubmit()">
+            <button mat-raised-button color="primary" type="submit">Proceed to book</button>
+        </form>
+    </div>
+</div>

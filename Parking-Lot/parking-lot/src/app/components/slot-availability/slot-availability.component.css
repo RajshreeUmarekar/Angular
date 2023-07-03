@@ -1,0 +1,34 @@
+#form {
+    padding: 15px;
+    background-color: white;
+    width: 50%;
+    margin-left: 25%;
+}
+#header, #entryForm {
+    text-align: center;
+}
+.mat-form-field {
+    width: 40vw;
+}
+#formRow {
+    margin-bottom: 10px;
+}
+#message {
+    margin-left: 25%;
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    width: 47.5vw;
+    border-radius: 15px;
+    border: solid;
+    height: 6vh;
+}
+.mdc-text-field__input::-webkit-calendar-picker-indicator {
+    display: block !important;
+}
+.mat-mdc-form-field {
+    width: 40vw;
+}
+.mat-mdc-raised-button:not(:disabled) {
+    background-color: darkblue;
+}

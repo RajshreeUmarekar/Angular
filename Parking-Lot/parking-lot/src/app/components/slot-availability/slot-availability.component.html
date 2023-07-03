@@ -1,0 +1,50 @@
+<div>
+    <div id="form">
+        <div id="header">
+            <h4>Check Booking Availability</h4>
+        </div>
+        <hr/>
+        <form id="entryForm" [formGroup]="entryForm" (ngSubmit)="onSubmit()">
+            <p>
+                <mat-form-field appearance="fill">
+                    <mat-label>Entry Gate Number</mat-label>
+                    <mat-select placeholder="entryGateNumber" formControlName="entryGateNumber" required>
+                        <mat-option value=1>1</mat-option>
+                        <mat-option value=3>3</mat-option>
+                        <mat-option value=5>5</mat-option>
+                        <mat-option value=7>7</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </p>
+            <p>
+                <mat-form-field appearance="fill">
+                    <mat-label>Entry Time</mat-label>
+                    <input matInput type="datetime-local" min="{{currentDate | date: 'yyyy-MM-ddTHH:mm:ss'}}" 
+                        max="{{currentDate | date: 'yyyy-MM-ddTHH:mm:ss'}}" placeholder="entryTime" 
+                        formControlName="entryTime" required>
+                </mat-form-field>
+            </p>
+            <p>
+                <mat-form-field appearance="fill">
+                    <mat-label>Vehicle Number</mat-label>
+                    <input matInput placeholder="vehicleNumber" formControlName="vehicleNumber" required>
+                </mat-form-field>
+            </p>
+            <p>
+                <mat-form-field appearance="fill">
+                    <mat-label>Vehicle Type</mat-label>
+                    <mat-select placeholder="vehicleType" formControlName="vehicleType" required>
+                        <mat-option *ngFor="let type of vehicleTypes" [value]="type.value">
+                            {{type.name}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </p>
+            <button mat-raised-button color="primary" type="submit">
+                Check booking availability
+            </button>
+        </form>
+    </div>
+    <br/>
+    <h5 id='message'>Slot availability : {{availability}}</h5>
+</div>

@@ -1,0 +1,18 @@
+#form {
+    padding: 15px;
+    background-color: white;
+    width: 50%;
+    margin-left: 25%;
+}
+#header, #footer {
+    text-align: center;
+}
+#labelName{
+    font-weight: 500;
+}
+.mat-mdc-raised-button:not(:disabled) {
+    background-color: darkblue;
+}
+.mat-mdc-card {
+    padding: 7px;
+}

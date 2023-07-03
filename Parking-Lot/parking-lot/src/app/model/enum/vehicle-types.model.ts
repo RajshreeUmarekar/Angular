@@ -1,0 +1,3 @@
+export enum VehicleType {
+    CAR, TRUCK, VAN, MOTORCYCLE, HANDICAPPED, ELECTRIC
+}

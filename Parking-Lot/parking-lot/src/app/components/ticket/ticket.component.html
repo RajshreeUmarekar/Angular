@@ -1,0 +1,64 @@
+<div id="ticket">
+    <div>
+        <div id="header">
+            <h4>Ticket #ID : {{ticketDetails.ticketId}}</h4>
+            <hr/>
+        </div>
+        <mat-card class="ticket-card">
+            <mat-card-title>Ticket Details</mat-card-title>
+            <hr/>
+            <mat-card-content>
+                <div class="row" style="background-color: #e4ebec;">
+                    <div class="col-md-3" id="labelName">
+                        <li>Entry Gate Number</li>
+                    </div>
+                    <div class="col-md-3">
+                        {{ticketDetails.entryGateNumber}}
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3" id="labelName">
+                        <li>Entry Time</li>
+                    </div>
+                    <div class="col-md-3">
+                        {{ticketDetails.entryTime}}
+                    </div>
+                </div>
+
+                <div class="row" style="background-color: #e4ebec;">
+                    <div class="col-md-3" id="labelName">
+                        <li>Exit Time</li>
+                    </div>
+                    <div class="col-md-3">
+                        {{ticketDetails.exitTime}}
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3" id="labelName">
+                        <li>Vehicle Number</li>
+                    </div>
+                    <div class="col-md-3">
+                        {{ticketDetails.vehicleNumber}}
+                    </div>
+                </div>
+
+                <div class="row"style="background-color: #e4ebec;">
+                    <div class="col-md-3" id="labelName">
+                        <li>Vehicle Type</li>
+                    </div>
+                    <div class="col-md-3">
+                        {{ticketDetails.vehicleType}}
+                    </div>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <br/>
+    <div id="footer">
+        <form (ngSubmit)="onSubmit()">
+            <button mat-raised-button color="primary" type="submit">Proceed to payment</button>
+        </form>
+    </div>
+</div>
