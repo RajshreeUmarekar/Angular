@@ -22,6 +22,7 @@
     border-radius: 15px;
     border: solid;
     height: 6vh;
+    margin-top: 1vh;
 }
 .mdc-text-field__input::-webkit-calendar-picker-indicator {
     display: block !important;

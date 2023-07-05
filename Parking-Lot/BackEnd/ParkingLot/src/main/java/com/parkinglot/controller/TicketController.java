@@ -52,7 +52,8 @@ public class TicketController {
 	}
 
 	private Ticket generateTicket(BookingDetails bookingDetails, int parkingSpotId) {
-		Vehicle vehicle = vehicleService.findByVehicleNumber(bookingDetails.getEntryTime());
+		System.out.println(bookingDetails.getVehicleNumber());
+		Vehicle vehicle = vehicleService.findByVehicleNumber(bookingDetails.getVehicleNumber());
 		
 		if(ticketService.findByVehicleId(vehicle.getId()) == null) {
 			Ticket ticket = new Ticket();

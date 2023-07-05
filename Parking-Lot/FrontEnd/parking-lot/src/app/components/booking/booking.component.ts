@@ -30,6 +30,7 @@ export class BookingComponent implements OnInit{
   onSubmit(): void {
     this.ticketService.getTicketDetails(this.bookingDetails, this.availabilityDetails).subscribe(
       response => {
+        console.log(response);
         if(response != null && response.ticketId != 0) {
           this.router.navigateByUrl('/ticket', { state: {
               ticketDetails: response,

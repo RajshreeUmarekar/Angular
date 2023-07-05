@@ -19,7 +19,7 @@ public class ParkingSpot {
 	private int parkingSpotId;
 	
 	private int parkingSpotTypeId;
-	private int floornumber;
+	private int floorNumber;
 	private boolean isOccupied;
 	private boolean isChargable;
 	
@@ -35,11 +35,11 @@ public class ParkingSpot {
 	public void setParkingSpotTypeId(int parkingSpotTypeId) {
 		this.parkingSpotTypeId = parkingSpotTypeId;
 	}
-	public int getFloornumber() {
-		return floornumber;
+	public int getFloorNumber() {
+		return floorNumber;
 	}
-	public void setFloornumber(int floornumber) {
-		this.floornumber = floornumber;
+	public void setFloorNumber(int floorNumber) {
+		this.floorNumber = floorNumber;
 	}
 	public boolean isOccupied() {
 		return isOccupied;

@@ -19,12 +19,12 @@ export class PaymentComponent implements OnInit{
 
   bookingDetails!: BookingDetails;
   ticketDetails!: TicketDetails;
-  amountDetails!: number;
+  amountDetails!: string;
 
   paymentForm = this.formBuilder.group({
     entryTime: '',
     exitTime: '',
-    amount: 0,
+    amount: '',
     paymentMode: ''
   });
 
@@ -55,7 +55,7 @@ export class PaymentComponent implements OnInit{
   }
 
   onSubmit(): void {
-    if(this.amountDetails == 0) {
+    if(this.amountDetails == "0") {
       this.router.navigateByUrl('/slot-availability');
     }else {
       this.paymentService.getPaymentStatus(this.paymentForm.value, this.ticketDetails).subscribe(

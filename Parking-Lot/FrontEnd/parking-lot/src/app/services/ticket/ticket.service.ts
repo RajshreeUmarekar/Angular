@@ -15,6 +15,6 @@ export class TicketService {
   }
 
   public getTicketDetails(bookingDetails: BookingDetails, availabilityDetails: AvailabilityDetails): Observable<TicketDetails> {
-    return this.http.post<TicketDetails>(Urls.ticketApiUrl, bookingDetails);
+    return this.http.post<TicketDetails>(Urls.ticketApiUrl + availabilityDetails.parkingSpotId, bookingDetails);
   }
 }

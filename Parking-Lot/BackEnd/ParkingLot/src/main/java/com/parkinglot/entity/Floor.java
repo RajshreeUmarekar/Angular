@@ -17,7 +17,7 @@ public class Floor {
 	@EmbeddedId
 	private FloorId floorId;
 	
-	private int totalNumberOfParkingSpotOfEachType;
+	private int totalNumberOfParkingSpotsOfEachType;
 	private int availableNumberOfParkingSpots;
 	
 	public FloorId getFloorId() {
@@ -26,11 +26,11 @@ public class Floor {
 	public void setFloorId(FloorId floorId) {
 		this.floorId = floorId;
 	}
-	public int getTotalNumberOfParkingSpotOfEachType() {
-		return totalNumberOfParkingSpotOfEachType;
+	public int getTotalNumberOfParkingSpotsOfEachType() {
+		return totalNumberOfParkingSpotsOfEachType;
 	}
-	public void setTotalNumberOfParkingSpotOfEachType(int totalNumberOfParkingSpotOfEachType) {
-		this.totalNumberOfParkingSpotOfEachType = totalNumberOfParkingSpotOfEachType;
+	public void setTotalNumberOfParkingSpotsOfEachType(int totalNumberOfParkingSpotsOfEachType) {
+		this.totalNumberOfParkingSpotsOfEachType = totalNumberOfParkingSpotsOfEachType;
 	}
 	public int getAvailableNumberOfParkingSpots() {
 		return availableNumberOfParkingSpots;
